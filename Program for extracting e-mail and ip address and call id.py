@@ -24,7 +24,7 @@ with open('regex.txt', 'r', encoding='utf8', errors='ignore') as f:
                     b = re.findall(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', line)
                     c = re.findall(r'[\d+%]\d+\-[\d+\w+]\w+.\d+\-[\d+\w+]\w+\d+', line)
                     if len(a) > 0:
-                        # print(a[0])
+                        
                         for i in a:
                             if i in unique_email:
                                 pass
@@ -34,7 +34,7 @@ with open('regex.txt', 'r', encoding='utf8', errors='ignore') as f:
                                 unique_email.append(i)
 
                     if len(b) > 0:
-                        # print(b[0])
+                        
                         for i in b:
                             if i in unique_ip:
                                 pass
@@ -46,7 +46,7 @@ with open('regex.txt', 'r', encoding='utf8', errors='ignore') as f:
                     total_lines += 1
 
                     if len(c) > 0:
-                        # print(a[0])
+                        
                         for i in c:
                             if i in unique_call:
                                 pass
