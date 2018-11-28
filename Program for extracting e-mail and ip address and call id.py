@@ -22,7 +22,7 @@ with open('regex.txt', 'r', encoding='utf8', errors='ignore') as f:
                     # print(line)
                     a = re.findall(r'[\w-]+@[\w-]+', line)
                     b = re.findall(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', line)
-                    c = re.findall(r'[\d+%]\d+\-[\d+\w+]\w+.\d+\-[\d+\w+]\w+\d+', line)
+                    c = re.findall(r'\s\w+\d+\d[\w+%]\d+\-[\d+\w+]\w+.\d+\-[\d+\w+]\w+\d+\d\w+', line)
                     if len(a) > 0:
                         
                         for i in a:
